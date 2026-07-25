@@ -115,6 +115,13 @@
             zu untersuchen.
           </p>
           <p>
+            Die öffentlich abrufbaren Informations- und Rechtstextseiten werden
+            über GitHub Pages, einen Dienst von GitHub, Inc., bereitgestellt.
+            GitHub verarbeitet dabei die für Auslieferung und Sicherheit
+            erforderlichen Verbindungs- und Protokolldaten nach den eigenen
+            Datenschutzbestimmungen.
+          </p>
+          <p>
             Innerhalb von Discord wird die Activity über die Infrastruktur und den Proxy von
             Discord bereitgestellt. Discord verarbeitet Daten nach den eigenen
             Datenschutzbestimmungen. Rechtsgrundlage für die technisch notwendige
@@ -180,15 +187,17 @@
         `},{title:`9. Empfänger und Drittlandbezug`,body:`
           <p>
             Je nach Nutzung können Daten an die zur Bereitstellung erforderlichen Kategorien
-            von Empfängern gelangen: Hosting- und Sicherheitsdienstleister sowie Discord als
-            Plattform- und Proxyanbieter. Beim bewussten Öffnen eines Regel-Links kommt der
-            jeweilige Herausgeber hinzu. Einige Anbieter können ihren Sitz oder technische
-            Infrastruktur außerhalb des Europäischen Wirtschaftsraums haben. Für deren
-            Verarbeitung gelten zusätzlich die jeweiligen Datenschutzbestimmungen und
-            vorgesehenen Übermittlungsmechanismen.
+            von Empfängern gelangen: Hosting- und Sicherheitsdienstleister, GitHub für die
+            öffentlichen Informations- und Rechtstextseiten sowie Discord als Plattform- und
+            Proxyanbieter. Beim bewussten Öffnen eines Regel-Links kommt der jeweilige
+            Herausgeber hinzu. Einige Anbieter können ihren Sitz oder technische Infrastruktur
+            außerhalb des Europäischen Wirtschaftsraums haben. Für deren Verarbeitung gelten
+            zusätzlich die jeweiligen Datenschutzbestimmungen und vorgesehenen
+            Übermittlungsmechanismen.
           </p>
           <ul class="external-links">
             <li><a href="https://discord.com/privacy" target="_blank" rel="noreferrer">Datenschutz bei Discord</a></li>
+            <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noreferrer">Datenschutz bei GitHub</a></li>
           </ul>
         `},{title:`10. Cookies, Analyse und automatisierte Entscheidungen`,body:`
           <p>
