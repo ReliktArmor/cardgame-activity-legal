@@ -1,1 +1,0 @@
-import{t as e}from"./legal-B4655249.js";e(`terms`);

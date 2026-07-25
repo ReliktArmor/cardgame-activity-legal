@@ -146,7 +146,8 @@
           <p>
             PlanRunde speichert Spielprofil, frei eingegebenen Spielnamen, Zählerbezeichnungen,
             Runde, Zugreihenfolge, Zugzeiten, Spielwerte, Kameradrehung, Spielernamen,
-            Discord-ID und optional eingetragene Anführer im lokalen Speicher deines Browsers.
+            Discord-ID sowie optional eingetragene Anführer, Bild- und Quellenadressen im
+            lokalen Speicher deines Browsers.
             Die Daten dienen dazu, den aktuellen Spielzustand darzustellen und nach einem
             Neuladen wiederherzustellen.
           </p>
@@ -168,7 +169,7 @@
             nicht an einen eigenen PlanRunde-Server übertragen. Discord stellt einer Activity
             nicht automatisch die Videobilder anderer Gesprächsteilnehmer zur Verfügung.
           </p>
-        `},{title:`7. Externe Regel-Links`,body:`
+        `},{title:`7. Externe Links und optionale Bildvorschauen`,body:`
           <p>
             PlanRunde bindet die verlinkten Regel-Seiten nicht automatisch ein. Erst wenn du
             einen externen Link öffnest, stellt dein Browser beziehungsweise Discord eine
@@ -176,6 +177,14 @@
             notwendige Verbindungsdaten wie deine IP-Adresse und Browserinformationen erhalten.
             Für diese Verarbeitung gelten die Datenschutzinformationen des jeweiligen
             Herausgebers.
+          </p>
+          <p>
+            Wenn du selbst eine externe Bildadresse für einen Anführer oder eine Schlüsselkarte
+            einträgst, wird das Bild erst beim Darüberfahren über den Kartennamen abgerufen.
+            Dabei stellt dein Gerät eine Verbindung zum von dir gewählten Bildanbieter her.
+            Der Anbieter kann insbesondere deine IP-Adresse, Zeitpunkt sowie Browser- und
+            Geräteinformationen erhalten. PlanRunde übermittelt dabei keinen Discord-Token und
+            setzt für den Bildabruf keine eigene Analyse ein.
           </p>
         `},{title:`8. Kartenerkennung`,body:`
           <p>
