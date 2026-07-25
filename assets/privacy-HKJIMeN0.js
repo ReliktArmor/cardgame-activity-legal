@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/legal-DwFVSnwB.js","assets/legal-BY5jU7eq.css"])))=>i.map(i=>d[i]);
+import{n as e,t}from"./preload-helper-CwH1TO2p.js";globalThis.__PLANRUNDE_LEGAL_CONFIG__=await e();var{renderLegalPage:n}=await t(async()=>{let{renderLegalPage:e}=await import(`./legal-DwFVSnwB.js`);return{renderLegalPage:e}},__vite__mapDeps([0,1]));n(`privacy`);

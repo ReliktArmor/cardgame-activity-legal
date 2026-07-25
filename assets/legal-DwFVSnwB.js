@@ -1,6 +1,6 @@
-(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`Marvin Haase`,t=`plan_b1312@web.de`,n=`25. Juli 2026`,r=`/cardgame-activity-legal/`.replace(/\/+$/,``),i={terms:{eyebrow:`Rechtliches`,title:`Nutzungsbedingungen`,intro:`Diese Bedingungen regeln die kostenlose Nutzung der Discord Activity PlanRunde.`,sections:[{title:`1. Anbieter und Geltungsbereich`,body:`
+var e=globalThis.__PLANRUNDE_LEGAL_CONFIG__||{},t=!!e.selfHosted,n=f(e.operatorName||(t?`Betreiber dieser Self-Host-Instanz (noch nicht eingetragen)`:`Marvin Haase`)),r=e.contactEmail||(t?``:`plan_b1312@web.de`),i=`25. Juli 2026`,a=`/cardgame-activity-legal/`.replace(/\/+$/,``),o={terms:{eyebrow:`Rechtliches`,title:`Nutzungsbedingungen`,intro:`Diese Bedingungen regeln die kostenlose Nutzung der Discord Activity PlanRunde.`,sections:[{title:`1. Anbieter und Geltungsbereich`,body:`
           <p>PlanRunde wird als kostenloses, nicht kommerzielles Hobbyprojekt angeboten von:</p>
-          ${s()}
+          ${l()}
           <p>
             Mit dem Start oder der Nutzung von PlanRunde akzeptierst du diese
             Nutzungsbedingungen. Für Discord gelten zusätzlich die Bedingungen der
@@ -60,7 +60,7 @@
             Eine automatische Kartenerkennung ist in der aktuellen Beta nicht aktiv. Sie wird
             erst für einzelne Spiele ergänzt, wenn ein geeigneter Datenanbieter und dessen
             Nutzungsbedingungen geprüft wurden. Hinweise oder begründete Entfernungsanfragen
-            können an <a href="mailto:${t}">${t}</a> gesendet werden.
+            können an ${u()} gesendet werden.
           </p>
         `},{title:`7. Kamera und lokale Speicherung`,body:`
           <p>
@@ -97,7 +97,7 @@
           </p>
         `}]},privacy:{eyebrow:`Deine Daten`,title:`Datenschutzerklärung`,intro:`Hier erfährst du transparent, welche Daten PlanRunde in der aktuellen Beta verarbeitet.`,sections:[{title:`1. Verantwortlicher`,body:`
           <p>Verantwortlicher für die Datenverarbeitung im Zusammenhang mit PlanRunde ist:</p>
-          ${s()}
+          ${l()}
         `},{title:`2. Kurzfassung`,body:`
           <div class="privacy-summary">
             <div><strong>Keine Werbung</strong><span>PlanRunde enthält keine Werbenetzwerke.</span></div>
@@ -235,7 +235,7 @@
             auf die er zugreifen oder die er für dich löschen könnte. Du kannst diese Daten
             direkt über deinen Browser beziehungsweise Discord-Client entfernen. Für weitere
             Anfragen erreichst du den Verantwortlichen unter
-            <a href="mailto:${t}">${t}</a>.
+            ${u()}.
           </p>
           <p>
             Außerdem hast du das Recht, dich bei einer zuständigen
@@ -248,10 +248,10 @@
             von Kamerabildern, Kartendatenanbieter, Analysefunktionen oder kostenpflichtige
             Angebote. Das oben genannte Datum zeigt den aktuellen Stand.
           </p>
-        `}]}};function a(e){let r=i[e]||i.privacy,a=window.document.querySelector(`#app`);window.document.title=`${r.title} · PlanRunde`,o(),window.document.querySelector(`meta[name="description"]`)?.setAttribute(`content`,`${r.title} für die Discord Activity PlanRunde.`),a.innerHTML=`
+        `}]}};function s(e){let t=o[e]||o.privacy,n=window.document.querySelector(`#app`);window.document.title=`${t.title} · PlanRunde`,c(),window.document.querySelector(`meta[name="description"]`)?.setAttribute(`content`,`${t.title} für die Discord Activity PlanRunde.`),n.innerHTML=`
     <div class="legal-shell">
       <header class="legal-header">
-        <a class="brand" href="${l(`/`)}" aria-label="Zurück zu PlanRunde">
+        <a class="brand" href="${m(`/`)}" aria-label="Zurück zu PlanRunde">
           <span class="brand-mark" aria-hidden="true">
             <span></span><span></span><span></span><span></span>
           </span>
@@ -261,18 +261,18 @@
           </span>
         </a>
         <nav class="legal-nav" aria-label="Rechtliche Seiten">
-          <a href="${l(`/terms/`)}" ${e===`terms`?`aria-current="page"`:``}>Nutzungsbedingungen</a>
-          <a href="${l(`/privacy/`)}" ${e===`privacy`?`aria-current="page"`:``}>Datenschutz</a>
+          <a href="${m(`/terms/`)}" ${e===`terms`?`aria-current="page"`:``}>Nutzungsbedingungen</a>
+          <a href="${m(`/privacy/`)}" ${e===`privacy`?`aria-current="page"`:``}>Datenschutz</a>
         </nav>
       </header>
 
       <main class="legal-main">
         <section class="legal-hero">
-          <span class="eyebrow">${r.eyebrow}</span>
-          <h1>${r.title}</h1>
-          <p>${r.intro}</p>
+          <span class="eyebrow">${t.eyebrow}</span>
+          <h1>${t.title}</h1>
+          <p>${t.intro}</p>
           <div class="legal-meta">
-            <span>Stand: ${n}</span>
+            <span>Stand: ${i}</span>
             <span>Kostenlos · nicht kommerziell</span>
             <span>Deutsch</span>
           </div>
@@ -282,12 +282,12 @@
           <aside class="legal-toc">
             <strong>Auf dieser Seite</strong>
             <ol>
-              ${r.sections.map((e,t)=>`<li><a href="#section-${t+1}">${c(e.title)}</a></li>`).join(``)}
+              ${t.sections.map((e,t)=>`<li><a href="#section-${t+1}">${d(e.title)}</a></li>`).join(``)}
             </ol>
           </aside>
 
           <article class="legal-document">
-            ${r.sections.map((e,t)=>`
+            ${t.sections.map((e,t)=>`
                   <section id="section-${t+1}">
                     <h2>${e.title}</h2>
                     ${e.body}
@@ -300,16 +300,16 @@
       <footer class="legal-footer">
         <span>PlanRunde · kostenloses Hobbyprojekt</span>
         <nav>
-          <a href="${l(`/terms/`)}">Nutzungsbedingungen</a>
-          <a href="${l(`/privacy/`)}">Datenschutz</a>
-          <a href="mailto:${t}">Kontakt</a>
+          <a href="${m(`/terms/`)}">Nutzungsbedingungen</a>
+          <a href="${m(`/privacy/`)}">Datenschutz</a>
+          ${u(`Kontakt`)}
         </nav>
       </footer>
     </div>
-  `}function o(){for(let e of[`robots`,`googlebot`]){let t=window.document.querySelector(`meta[name="${e}"]`);t||(t=window.document.createElement(`meta`),t.setAttribute(`name`,e),window.document.head.append(t)),t.setAttribute(`content`,`noindex, nofollow, noarchive, nosnippet`)}}function s(){return`
+  `}function c(){for(let e of[`robots`,`googlebot`]){let t=window.document.querySelector(`meta[name="${e}"]`);t||(t=window.document.createElement(`meta`),t.setAttribute(`name`,e),window.document.head.append(t)),t.setAttribute(`content`,`noindex, nofollow, noarchive, nosnippet`)}}function l(){return`
     <address class="contact-card">
-      <strong>${e}</strong>
+      <strong>${n}</strong>
       <span>Betreiber von PlanRunde</span>
-      <a href="mailto:${t}">${t}</a>
+      ${u()}
     </address>
-  `}function c(e){return e.replace(/^\d+\.\s*/,``)}function l(e){return`${r}${e}`}export{a as t};
+  `}function u(e=r||`Kontakt beim Betreiber`){return r?`<a href="mailto:${p(r)}">${f(e)}</a>`:`<span>${f(e)}</span>`}function d(e){return e.replace(/^\d+\.\s*/,``)}function f(e){return String(e).replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`).replaceAll(`'`,`&#039;`)}function p(e){return f(e)}function m(e){return`${a}${e}`}export{s as renderLegalPage};
