@@ -1,0 +1,1 @@
+import{t as e}from"./legal-D0HJMFPa.js";e(`privacy`);
